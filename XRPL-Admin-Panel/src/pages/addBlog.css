@@ -1,0 +1,153 @@
+.formLabelUpload {
+    border: 1px dashed gray !important;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formLabelUpload .formInputUpload {
+    opacity: 0;
+    position: absolute;
+}
+.formLabelUpload svg {
+    width: 50px;
+    height: 50px;
+}
+.addBLogForm {
+    padding: 40px 0px;
+}
+.addBLogForm .rowForm {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.addBLogForm .rowForm .inputTitle.imageInput {
+    width: 300px;
+}
+.addBLogForm .rowForm .titleInputDiv {
+    width: calc(100% - 300px);
+}
+.addBLogForm .rowForm .titleInput {
+    width: 70%;
+}
+/* .addBLogForm .rowForm .titleInputTextArea {
+    width: 70%;
+    line-height: 1.4375em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212b36;
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.addBLogForm .rowForm .titleInputTextArea::before{
+border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+left: 0;
+bottom: 0;
+content: "\00a0";
+position: absolute;
+right: 0;
+-webkit-transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+pointer-events: none;
+}
+
+.addBLogForm .rowForm .titleInputTextArea:hover ::before {
+    border-bottom: #212b36;
+}
+.addBLogForm .rowForm .titleInputTextArea::after{
+
+border-bottom: 2px solid #2065d1;
+left: 0;
+bottom: 0;
+content: "";
+position: absolute;
+right: 0;
+-webkit-transform: scaleX(0);
+-moz-transform: scaleX(0);
+-ms-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+pointer-events: none;
+} */
+
+#blogRef {
+    width: 100%;
+    box-shadow: 0px 0px 10px -5px black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 40px 0px;
+}
+.mainBlogPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.mainBlogPage .formBlogPage {
+    width: 100%;
+}
+.mainBlogPage .previewDivBlog {
+    width: 100%;
+    /* padding: 0px 0px 0px 40px; */
+}
+.mainBlogPage .cancelIcons {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+.mainBlogPage .cancelIcons svg {
+    width: 30px;
+    height: 30px;
+}
+.mainBlogPage .formLabelUploadDiv {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.tagsDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tagsDiv .tag{
+    background-color: gray;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* padding: padd; */
+    padding: 0px 0px 0px 10px;
+    border-radius: 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.tagsDiv .tag span{
+    margin-left: 10px;
+    /* transform: scale(0); */
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+/* .tagsDiv .tag:hover span{
+    transform: scale(1);
+
+} */

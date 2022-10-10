@@ -1,0 +1,10 @@
+.nftDescription {
+  font-size: 15px;
+  color: #9c9c9c;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  /* height: 66px; */
+  overflow: hidden;
+}
