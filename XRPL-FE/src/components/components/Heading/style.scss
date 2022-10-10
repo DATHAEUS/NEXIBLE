@@ -1,0 +1,133 @@
+.overlayVideo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.20);
+
+  @media screen and (max-width: 600px) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+.Heading {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border-radius: none;
+  display: inherit;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding: 10px 15px;
+  gap: 20px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Borders {
+    top: 50%;
+    left: 0;
+    transform: translateY(-45%);
+    width: 100%;
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+
+    span {
+      background: #000;
+      height: 1px;
+      display: block;
+    }
+  }
+
+  .HeadingText {
+    position: inherit;
+    z-index: 1;
+    background-color: #FFF;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #000;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    margin: initial;
+    font-size: calc(1.3125rem + 0.75vw);
+    font-family: "Barlow", sans-serif;
+    padding: 0px 30px;
+    padding-inline: 3.5rem;
+
+    @media screen and (max-width:"500px") {
+      padding-inline: 0.5rem;
+    }
+
+    @media screen and (max-width:"700px") {
+      padding-inline: 1rem;
+    }
+
+    @media screen and (max-width:"1100px") {
+      padding-inline: 2rem;
+      font-size: 1.875rem;
+    }
+
+    @media screen and (max-width:"1400px") {
+      padding-inline: 3.5rem;
+      font-size: calc(1.3125rem + 0.75vw);
+    }
+  }
+
+
+  .Borders::before {
+    content: "";
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 12px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(1240deg, rgb(4 17 242) 33%, rgb(42, 243, 4) 63%);
+    border-image-slice: 1;
+    position: absolute;
+
+    @media screen and (max-width:"1400px") {
+      width: 50%;
+    }
+
+    @media screen and (max-width:"1100px") {
+      width: 70%;
+    }
+
+    @media screen and (max-width:"900px") {
+      width: 80%;
+    }
+
+    @media screen and (max-width:"800px") {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .navbar {
+    background: linear-gradient(1240deg, rgb(4, 17, 242) 0%, rgb(42, 243, 4) 100%) !important
+  }
+
+  .mainside a {
+    background: white !important;
+    color: rgb(4, 17, 242) !important;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .nft__item_wrapInner {
+    width: 100%;
+    height: 100%;
+  }
+}

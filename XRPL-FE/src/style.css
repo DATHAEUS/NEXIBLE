@@ -1,0 +1,85 @@
+
+.removeUnderline{
+    text-decoration: none;
+    color:  blue !important;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  
+  .removeUnderline:hover {
+    color: darkblue !important;
+  }
+  
+  .removeUnderlineDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spinnerBlog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .spinnerBlog svg{
+    height: 30px;
+    width: 30px;
+  }
+
+  #loading-spinner {
+    display: block;
+    margin: 0 auto;
+    animation: loading-spinner-spin 2s linear infinite;
+    will-change: transform;
+}
+
+@keyframes loading-spinner-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loading-circle {
+    /* $custom-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95); // Sine
+$animation-duration: 1.7s;
+$small-stroke: 105;
+$small-stroke-animate: 95;
+$meduim-stroke: 160;
+$meduim-stroke-animate: 143;
+$large-stroke: 210;
+$large-stroke-animate: 190;
+$rotate: 25deg;
+$rotate-origin: -32deg; */
+
+    stroke-dasharray: 105;
+    stroke-dashoffset: 105;
+    stroke-linecap: round;
+    animation: loading-spinner-small 1.7s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    transform: translateZ(0);
+    transform-origin: center;
+    will-change: stroke-dashoffset;
+}
+
+@keyframes loading-spinner-small {
+    0% {
+        stroke-dashoffset: 95;
+        transform: scaleY(1);
+    }
+    49.99% {
+        stroke-dashoffset: 0;
+        transform: scaleY(1);
+    }
+    50% {
+        stroke-dashoffset: 0;
+        transform: scaleY(-1) rotate(25deg);
+    }
+    100% {
+        stroke-dashoffset: 95;
+        transform: scaleY(-1) rotate(-32deg);
+    }
+}
